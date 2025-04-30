@@ -71,7 +71,7 @@ def inp():
     user = translate1(language,user)
     return user
 
-# file = ""
+# file = "C:\\Users\\HP\\Desktop\\audio_output.mp3"
 
 async def play(s):
     file = f"C:\\Users\\HP\\Desktop\\{int(time.time())}.mp3"
@@ -89,10 +89,11 @@ async def ter(s):
         k = s
     k = translate2(language,k)
     await play(k)
-    for i in range(len(s)-1):
-        print(s[i],end='')
+    print("Chatbot: ",end="")
+    for i in range(len(k)-1):
+        print(k[i],end='')
         time.sleep(0.02)
-    print(s[len(s)-1])
+    print(k[len(k)-1])
 
 async def ter1(s):
     if s.startswith("Chatbot:"):
@@ -104,7 +105,6 @@ async def ter1(s):
     for i in s:
         print(i,end='')
         time.sleep(0.03)
-
 
 
 def vinp():
