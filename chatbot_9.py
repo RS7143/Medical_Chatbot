@@ -54,7 +54,7 @@ elif language == "spanish":
     language_voice = "es-ES"
     language_output = "es-ES-ElviraNeural"
 
-f = open("C:\\Users\\HP\\Desktop\\IIS Project\\New folder (3)\\symptoms_1.json",'r')
+f = open("symptoms_1.json",'r')
 information = json.load(f)
 f.close()
 
@@ -71,7 +71,7 @@ def inp():
     user = translate1(language,user)
     return user
 
-# file = "C:\\Users\\HP\\Desktop\\audio_output.mp3"
+# file = ""
 
 async def play(s):
     file = f"C:\\Users\\HP\\Desktop\\{int(time.time())}.mp3"
@@ -240,7 +240,7 @@ async def duration(symptoms,finish):
     return L1
 
 def report(d, summary):
-    file = "C:\\Users\\HP\\Desktop\\patient_report.pdf"
+    file = "patient_report.pdf"
     pointer = FPDF()
     pointer.add_page()
     pointer.set_font("Courier", size=25)
@@ -432,7 +432,7 @@ client_encryption = ClientEncryption(
 encryption_key_id = client_encryption.create_data_key("local")
 # print("Encryption Key ID:", encryption_key_id)
 
-SYMPTOM_FILE_PATH = "C:\\Users\\HP\\Desktop\\IIS Project\\New folder (3)\\symptoms_1.json"
+SYMPTOM_FILE_PATH = "symptoms_1.json"
 
 with open(SYMPTOM_FILE_PATH, 'r') as f:
     information = json.load(f)
