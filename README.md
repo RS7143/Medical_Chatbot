@@ -30,11 +30,4 @@ A responsive medical-information chatbot website based on the uploaded command-l
 
 9. Open http://127.0.0.1:5000 in your browser.
 
-## Important
 
-- No real API key is included. API calls are made by the Python server so the key is not exposed to browser JavaScript.
-- API usage may incur charges depending on your account and model access.
-- The assistant provides general information only; it does not diagnose conditions or replace a clinician.
-- Do not collect or store patient names, phone numbers, or medical records in this demo. Chat history stays in the current browser page and is not saved to a database by this app.
-- For a public deployment, use HTTPS, add authentication and rate limiting, configure secure hosting, and get appropriate privacy/security review before handling health information.
-- This demo does not implement the original code's voice input/output, symptom JSON matching, PDF export, or MongoDB storage. Those should be added deliberately with secure handling and testing if required.
